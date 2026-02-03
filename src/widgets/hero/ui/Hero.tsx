@@ -29,17 +29,17 @@ export function Hero() {
 
   return (
     <>
-      <section className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 via-white/0 to-sky-500/10 p-6 sm:p-10">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(600px_circle_at_20%_0%,rgba(56,189,248,0.25),transparent_55%)]" />
+      <section className="relative overflow-hidden rounded-2xl border border-zinc-200 bg-gradient-to-br from-zinc-100 via-white to-sky-100/50 p-6 dark:border-white/10 dark:from-white/5 dark:via-white/0 dark:to-sky-500/10 sm:p-10">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(600px_circle_at_20%_0%,rgba(56,189,248,0.15),transparent_55%)] dark:bg-[radial-gradient(600px_circle_at_20%_0%,rgba(56,189,248,0.25),transparent_55%)]" />
         <div className="relative grid gap-8 md:grid-cols-2 md:items-center">
           <div>
-            <p className="mb-3 inline-flex items-center rounded-full border border-sky-500/20 bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-200">
+            <p className="mb-3 inline-flex items-center rounded-full border border-sky-400/40 bg-sky-500/15 px-3 py-1 text-xs font-medium text-sky-700 dark:border-sky-500/20 dark:bg-sky-500/10 dark:text-sky-200">
               #1 Trending this week
             </p>
-            <h1 className="text-3xl font-semibold leading-tight text-white sm:text-4xl">
-              Explore the <span className="text-sky-300">Universe</span> of Cinematic Masterpieces
+            <h1 className="text-3xl font-semibold leading-tight text-zinc-900 dark:text-white sm:text-4xl">
+              Explore the <span className="text-sky-600 dark:text-sky-300">Universe</span> of Cinematic Masterpieces
             </h1>
-            <p className="mt-4 max-w-xl text-sm leading-6 text-zinc-300">
+            <p className="mt-4 max-w-xl text-sm leading-6 text-zinc-600 dark:text-zinc-300">
               Ищи фильмы, смотри детали, рейтинги и актёров. Лента поддерживает поиск с debounce и бесконечную
               подгрузку.
             </p>
@@ -62,7 +62,7 @@ export function Hero() {
               </button>
             </div>
 
-            <div className="mt-8 grid max-w-md grid-cols-3 gap-4 text-white">
+            <div className="mt-8 grid max-w-md grid-cols-3 gap-4 text-zinc-900 dark:text-white">
               <div>
                 <div className="text-lg font-semibold">24k+</div>
                 <div className="text-xs text-zinc-400">Movies</div>

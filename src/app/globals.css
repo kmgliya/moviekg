@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-/* Base colors controlled by .dark class (Tailwind darkMode: 'class') */
+/* Tailwind v4: class-based dark mode */
+@custom-variant dark (&&:where(.dark, .dark *));
+
+/* Base colors controlled by .dark class */
 :root {
   --background: #ffffff;
   --foreground: #0f172a; /* slate-900 */

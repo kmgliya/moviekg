@@ -7,20 +7,20 @@ import { Film } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/60 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/95 backdrop-blur dark:border-white/10 dark:bg-black/80">
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-sky-500/15 text-sky-300">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-sky-500/20 text-sky-600 dark:bg-sky-500/15 dark:text-sky-300">
             <Film className="h-4 w-4" />
           </span>
-          <span className="text-sm font-semibold text-white">MovieKG</span>
+          <span className="text-sm font-semibold text-zinc-900 dark:text-white">MovieKG</span>
         </Link>
 
-        <nav className="hidden items-center gap-4 text-sm text-zinc-300 md:flex">
-          <a className="hover:text-white" href="#trending">
+        <nav className="hidden items-center gap-4 text-sm text-zinc-600 dark:text-zinc-300 md:flex">
+          <a className="hover:text-zinc-900 dark:hover:text-white" href="#trending">
             Trending
           </a>
-          <a className="hover:text-white" href="#popular">
+          <a className="hover:text-zinc-900 dark:hover:text-white" href="#popular">
             Popular
           </a>
         </nav>
